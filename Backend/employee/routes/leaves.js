@@ -171,7 +171,7 @@ router.route("/update1/:leave_id").put(async (req, res) => {
 
         
         await transporter.sendMail({
-            from: '"Leave Management System" <assigmentgroupy@gmail.com>',
+            from: '"Leave Management System" <yourgmail@gmail.com>',
             to: employee.email, 
             subject: `Your leave request has been ${leave_status}`,
             html: `<p>Your leave request for ${leave.leave_type} from ${leave.start_date} to ${leave.end_date} has been <b>${leave_status.toLowerCase()}</b>.</p>`
